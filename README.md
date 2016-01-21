@@ -11,22 +11,8 @@ repository using the Subversion command:
 
     svn list http://genie.hepforge.org/svn/generator/branches
 
-_This_ repository contains different versions of GENIE stored as tags (on the
-`master` branch) and as development branches. To see the full list, use
-
-    git ls-remote --tags
-
-You can get a specific release with, for example
-
-    git checkout -b R-2_10_2-br R-2_10_2
-
-where `R-2_10_2-br` is the name of the branch you are checking the tag out
-into, and `R-2_10_2` is the name of the tag you would like to get. (It is a
-good idea to check out into a branch to avoid ending up in a "detached HEAD"
-state.) This is the recommended way to get a specific version of GENIE.
-
-If you would like to see the branches used to develop the tagged versions
-or the development branches stored here, use
+_This_ repository contains different versions of GENIE stored on branches.
+You can see the list of available branches with
 
     git remote show origin
 
