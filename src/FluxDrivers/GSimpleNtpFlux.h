@@ -10,7 +10,7 @@
 
 \created  Jan 25, 2010
 
-\cpright  Copyright (c) 2003-2015, GENIE Neutrino MC Generator Collaboration
+\cpright  Copyright (c) 2003-2016, GENIE Neutrino MC Generator Collaboration
           For the full text of the license visit http://copyright.genie-mc.org
           or see $GENIE/LICENSE
 */
@@ -291,7 +291,7 @@ private:
   // Private data members
   //
   double         fMaxEv;          ///< maximum energy
-  PDGCodeList *  fPdgCListRej;    ///< list of neutrino pdg-codes seen but rejected
+
   bool           fEnd;            ///< end condition reached
 
   std::vector<string> fNuFluxFilePatterns;  ///< (potentially wildcarded) path(s)
@@ -309,8 +309,6 @@ private:
   double    fWeight;              ///< current neutrino weight
   double    fMaxWeight;           ///< max flux neutrino weight in input file
 
-  long int  fNCycles;             ///< # times to cycle through the flux ntuple
-  long int  fICycle;              ///< current file cycle
   long int  fNUse;                ///< how often to use same entry in a row
   long int  fIUse;                ///< current # of times an entry has been used
 
@@ -324,8 +322,6 @@ private:
   bool      fAlreadyUnwgt;        ///< are input files already unweighted
                                   // i.e. are all entry "wgt" values = 1
   bool      fAllFilesMeta;        ///< do all files in chain have meta data
-
-  double           fZ0;             ///< configurable starting z position for each flux neutrino (in detector coord system)
 
   GSimpleNtpEntry* fCurEntry;  ///< current entry
   GSimpleNtpNuMI*  fCurNuMI;   ///< current "numi" branch extra info

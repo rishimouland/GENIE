@@ -1,6 +1,6 @@
 //____________________________________________________________________________
 /*
- Copyright (c) 2003-2015, GENIE Neutrino MC Generator Collaboration
+ Copyright (c) 2003-2016, GENIE Neutrino MC Generator Collaboration
  For the full text of the license visit http://copyright.genie-mc.org
  or see $GENIE/LICENSE
 
@@ -1185,8 +1185,7 @@ void GNuMIFlux::Initialize(void)
 
   fMaxEv           =  0;
   fEnd             =  false;
-  fPdgCList        = new PDGCodeList;
-  fPdgCListRej     = new PDGCodeList;
+
   fCurEntry        = new GNuMIFluxPassThroughInfo;
 
   fNuFluxTree      =  0;
